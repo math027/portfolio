@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fullstack | Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="stars-container" id="stars-container"></div>
+
+    <header>
+        <div class="logo">&lt;DevFullStack /&gt;</div>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre Mim</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact" class="btn" style="margin-left: 1rem; padding: 8px 20px;">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Olá, sou <span id="name">Matheus</span></h1>
+                <div class="typing-effect">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-intro">Transformando ideias complexas em experiências digitais elegantes e funcionais.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Fale Comigo</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <img src="/foto.jpg" alt="Minha foto de perfil" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2><span>Sobre Mim</span></h2>
+        <div class="about-text-container">
+            <p>
+                Sou um desenvolvedor Fullstack apaixonado por criar soluções que unem design intuitivo e arquitetura robusta. Com 5 anos de experiência no mercado, especializei-me no ecossistema JavaScript (React, Node.js) e em infraestrutura em nuvem.
+            </p>
+            <p>
+                Acredito que a tecnologia deve facilitar a vida das pessoas. Meu objetivo não é apenas escrever código, mas entender o problema de negócio e entregar valor real através de software performático e escalável. Quando não estou codando, estou explorando novas tecnologias, contribuindo para projetos open-source ou tomando um bom café.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><span>Tecnologias Principais</span></h2>
+        <div class="skills-container">
+            <div class="skill-item" style="--color:#f7df1e">JavaScript</div>
+            <div class="skill-item" style="--color:#61dafb">React.js</div>
+            <div class="skill-item" style="--color:#339933">Node.js</div>
+            <div class="skill-item" style="--color:#3178c6">TypeScript</div>
+            <div class="skill-item" style="--color:#0db7ed">Docker</div>
+            <div class="skill-item" style="--color:#f05032">Git</div>
+            <div class="skill-item" style="--color:#4479a1">SQL/NoSQL</div>
+            <div class="skill-item" style="--color:#38bdf8">Tailwind CSS</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><span>Projetos Recentes</span></h2>
+        <div class="grid">
+            
+            <div class="card" data-id="senha">
+                <h3>Gerador de senhas</h3>
+                <p>Projeto de um gerador de senhas desenvolvido para criar senhas fortes e aleatórias de forma rápida e prática.</p>
+                <div class="project-links">
+                    <a href="https://geradordesenhasdomatheus.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Site</a>
+                    <a href="" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="contrato">
+                <h3>Gerador de Contratos</h3>
+                <p>Automação para agilizar a criação de documentos padronizados para a Griffus Cosméticos.</p>
+                <div class="project-links">
+                    <a href="" target="_blank"><i class="fa-solid fa-globe"></i> Site</a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="aniversario">
+                <h3>Gerador de Aniversariantes</h3>
+                <p>Gerador mensal focado em automação e padronização de artes internas.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fa-solid fa-globe"></i> Site</a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2><span>Vamos Conversar?</span></h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Estou sempre em busca de novos desafios. Se você tem um projeto em mente ou apenas quer dar um oi, entre em contato!</p>
+        <a href="https://wa.me/5527992912965" class="btn">WhatsApp</a>
+    </section>
+
+    <footer class="footer-signature">
+        <div class="footer-content">
+            <p>Desenvolvido por: <strong>Matheus</strong></p>
+            <div class="social-links">
+            <a href="https://github.com/math027" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/matheussouzx" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/matheussouzx_" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 id="modal-title">Título do Projeto</h3>
+            <div class="modal-body">
+                <p id="modal-desc">Descrição aqui...</p>
+            </div>
+            </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
